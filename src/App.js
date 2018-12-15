@@ -29,10 +29,11 @@ class App extends React.Component {
         });
 
         return (
-            <div className="tc mt3">
-                <SearchBox searchChange={this.onSearchChange} />
-                <CardList robots={filteredRobots} />
             </div>
+          <div className="tc mt3">
+            <SearchBox searchChange={this.onSearchChange} />
+            <CardList robots={filteredRobots} />
+          </div>
         );
     }
 }
