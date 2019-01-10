@@ -2,6 +2,7 @@ import React from 'react';
 import CardList from './CardList';
 import { robots } from './robots'; /* currently not used. used data fetched from jsonplaceholder API  */
 import SearchBox from './SearchBox';
+import Scroll from './Scroll';
 
 class App extends React.Component {
     constructor() {
@@ -38,12 +39,15 @@ class App extends React.Component {
                 .includes(this.state.searchField.toLowerCase());
         });
 
-        // TODO: if(this.state.robots.length === 0) add 'loading' text
-
+        if(!this.state.robots.length) {
+            return <h1 className="tc">Loading Robots...</h1>;
+        } else
         return (
           <div className="tc mt3">
             <SearchBox searchChange={this.onSearchChange} />
-            <CardList robots={filteredRobots} />
+            <Scroll>
+                <CardList robots={filteredRobots} />
+            </Scroll>
           </div>
         );
     }
