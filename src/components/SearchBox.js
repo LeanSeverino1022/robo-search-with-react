@@ -3,9 +3,10 @@ import React from 'react';
 const SearchBox = ({ searchChange }) => {
     return (
         <input
-            className="pa3 ba b--black"
+            style = {{minWidth: 250 }}
+            className="f3-m mb4 pa3 ba b--lightest-blue"
             type="search"
-            placeholder="Search by name"
+            placeholder="Search your friends by name"
             onChange={searchChange}
         />
     );

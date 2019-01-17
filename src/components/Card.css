@@ -4,7 +4,20 @@
     src: url('angelina.ttf') format('truetype');
 }
 
-h2 {
-    font-family: 'Angelina';
-    font-size: 2rem;
+@font-face {
+    font-family: 'Roboto Slab Light Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Roboto Slab Light Italic'), url('RobotoSlab-LightItalic.woff') format('woff');
 }
+
+h2 {
+    font-family: 'Roboto Slab Light Italic';
+    /* font-size: 2rem; */
+}
+
+.card:hover,
+.card:focus  {
+	border-color: #4596e8;
+}
+
