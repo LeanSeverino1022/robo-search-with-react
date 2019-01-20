@@ -1,16 +1,22 @@
 import React from 'react';
 import CardList from '../components/CardList';
-import { robots } from '../robots'; /* currently not used. used data fetched from jsonplaceholder API  */
+
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+
+// source of data options
+import localJSON from './people_data.json';  //local json
+import { friends } from './friends'; 
+let apiData = "https://jsonplaceholder.typicode.com/users"; // Fake Online REST API  
 
 class App extends React.Component {
     constructor() {
         super();
         this.state = {
             searchField: '',
-            robots: []
-            // robots: robots // if you want local data from robots.js
+            friends: [],
+            // friends: friends, // if you want local data from friends.js
+            // friends: localJSON // if you want local data from json file
         };
 
         this.onSearchChange = this.onSearchChange.bind(this); //or use arrow functions onSearchChange = (event) =>
@@ -23,30 +29,32 @@ class App extends React.Component {
     }
 
     componentDidMount(){
-        fetch('https://jsonplaceholder.typicode.com/users')
+
+        fetch(apiData)
             .then(response => response.json())
             .then(data => {
-                this.setState({ robots: data})
+                this.setState({ friends: data})
+                console.log(data)
             })
             .catch( error => {console.log('error: ',error)})
     }
 
     render() {
-        // filter robots that contains the string input in the search box
-        const filteredRobots = this.state.robots.filter(robot => {
-            return robot.name
+        // filter friends that contains the string input in the search box
+        const filteredfriends = this.state.friends.filter(friend => {
+            return friend.name
                 .toLowerCase()
                 .includes(this.state.searchField.toLowerCase());
         });
 
-        if(!this.state.robots.length) {
-            return <h1 className="tc">Loading Robots...</h1>;
+        if(!this.state.friends.length) {
+            return <h1 className="tc">Loading friends...</h1>;
         } else
         return (
           <div className="tc mt3">
             <SearchBox searchChange={this.onSearchChange} />
             <Scroll>
-                <CardList robots={filteredRobots} />
+                <CardList friends={filteredfriends} />
             </Scroll>
           </div>
         );
