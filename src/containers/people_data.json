@@ -1,0 +1,88 @@
+[
+    {
+        "id": 1,
+        "name": "Kristine Makilan",
+        "nickname": "Maki",
+        "email": "Sincere@maki.biz",
+        "phone number": "639057778891",
+        "more_info": "She helped me with this and that"
+    },
+    {
+        "id": 2,
+        "name": "Puyih Sev",
+        "nickname": "yi",
+        "email": "puyih88@gmail.com",
+        "phone number": "639057778892",
+        "more_info": "He helped me with this and that"
+    },
+    {
+        "id": 3,
+        "name": "Kobe Bryant",
+        "nickname": "Black Mamba",
+        "email": "mamba@yahoocom",
+        "phone number": "639057778893",
+        "more_info": "He helped me with this and that"
+
+    },
+    {
+        "id": 4,
+        "name": "Brent Chu",
+        "nickname": "Brent",
+        "email": "Brent@gmail.com",
+        "phone number": "639057778894",
+        "more_info": "He helped me with this and that"
+    },
+    {
+        "id": 5,
+        "name": "Patrick Torres",
+        "nickname": "Darkstar",
+        "email": "jakethesnake@gmail.com",
+        "phone number": "639057778895",
+        "more_info": "He helped me with this and that"
+
+    },
+    {
+        "id": 6,
+        "name": "Ryan Bilbao",
+        "nickname": "Papits",
+        "email": "Papits29@yahoo.com",
+        "phone number": "639057778896",
+        "more_info": "He helped me with this and that"
+
+    },
+    {
+        "id": 7,
+        "name": "Aldrin Santibanez",
+        "nickname": "Santi",
+        "email": "Santi@yahoo.com",
+        "phone number": "639057778897",
+        "more_info": "He helped me with this and that"
+
+    },
+    {
+        "id": 8,
+        "name": "Stephen Chua",
+        "nickname": "StepChu",
+        "email": "StepChu@april.biz",
+        "phone number": "639057778898",
+        "more_info": "He helped me with this and that"
+
+    },
+    {
+        "id": 9,
+        "name": "Jason Jalandoni",
+        "nickname": "Panda",
+        "email": "Chismis@yahoo.com",
+        "phone number": "639057778899",
+        "more_info": "He helped me with this and that"
+
+    },
+    {
+        "id": 10,
+        "name": "Luke Singson",
+        "nickname": "Daluke",
+        "email": "Daluke@gmail.com",
+        "phone number": "639057778890",
+        "more_info": "He helped me with this and that"
+    }
+]
