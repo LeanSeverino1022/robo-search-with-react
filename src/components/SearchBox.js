@@ -1,14 +1,20 @@
+import './SearchBox.css';
 import React from 'react';
 
 const SearchBox = ({ searchChange }) => {
     return (
-        <input
-            style = {{minWidth: 250 }}
-            className="f3-m mb4 pa3 ba b--lightest-blue"
-            type="search"
-            placeholder="Search your friends by name"
-            onChange={searchChange}
-        />
+        <React.Fragment>
+            <div class="search-wrapper pa3">
+                <input                
+                    className="f3-m pa1 b--black-05"
+                    style = {{"min-width": 250 }}
+                    type="search"
+                    placeholder="Search"
+                    onChange={searchChange}
+                />            
+            </div>
+            <p class="description mb4"> Start by typing in the search box</p>
+        </React.Fragment>
     );
 };
 

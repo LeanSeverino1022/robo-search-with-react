@@ -11,8 +11,17 @@ h2 {
     /* font-size: 2rem; */
 }
 
+.card{
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+    max-width: 200px;
+    height: 300px;
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;
+}
+
 .card:hover,
 .card:focus  {
-	border-color: #4596e8;
+	-webkit-transform: translatex(0px) translatey(-8px);
+          transform:  translatex(0px) translatey(-8px);
 }
 

@@ -3,7 +3,7 @@ import './Card.css';
 
 const Card = ({ id, name, email }) => {
     return (
-        <div className="card tc b--lightest-blue bg-mid-white ba dib pa3 ma2 grow">
+        <div className="card tc bg-mid-white dib pa3 ma2 grow">
             <img
                 alt={'person' + id}
                 src={`https://robohash.org/${name.replace(/\s/g,'')}?size=200x200`}
