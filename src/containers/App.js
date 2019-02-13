@@ -5,16 +5,18 @@ import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 
 // source of data options
-import localJSON from './people_data.json';  //local json
+import localJSON from './people_data.json';  //local json if you don't have internet
 import { friends } from './friends'; 
 let apiData = "https://jsonplaceholder.typicode.com/users"; // Fake Online REST API  
+
+let getDataFromAPI = false;
 
 class App extends React.Component {
     constructor() {
         super();
         this.state = {
             searchField: '',
-            friends: [],
+            friends: (getDataFromAPI) ? [] : localJSON,
             // friends: friends, // if you want local data from friends.js
             // friends: localJSON // if you want local data from json file
         };
@@ -29,6 +31,8 @@ class App extends React.Component {
     }
 
     componentDidMount(){
+
+        if(!getDataFromAPI) return;
 
         fetch(apiData)
             .then(response => response.json())
