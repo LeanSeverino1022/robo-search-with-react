@@ -1,4 +1,4 @@
-[Link to the App](https://LeanSeverino1022.github.io/robo-search-with-react)
+[Link to the App](https://leanseverino1022.github.io/search-and-filter-with-react/)
 
 <br><br>
 
