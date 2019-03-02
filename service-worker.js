@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/robo-search-with-react/precache-manifest.06d86ea4ef8522b4323672fcf05b6b86.js"
+  "/search-and-filter-with-react/precache-manifest.615a5d67db50d90e75079e31cbb082ab.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/robo-search-with-react/index.html", {
+workbox.routing.registerNavigationRoute("/search-and-filter-with-react/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
